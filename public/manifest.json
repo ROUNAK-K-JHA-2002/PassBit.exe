@@ -2,9 +2,20 @@
     "manifest_version": 3,
     "name": "PassBit",
     "description": "A Secure password manager",
-    "version": "1.0",
+    "version": "1.0.1",
     "action": {
       "default_popup": "index.html",
-      "default_icon": "vite.svg"
-    }
+      "default_icon": "ic_launcher.png"
+    },
+    "permissions": ["activeTab"],
+    "background" :{
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "js": ["content-scripts/main.jsx"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+    
 }
