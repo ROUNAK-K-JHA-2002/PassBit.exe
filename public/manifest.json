@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "PassBit",
+    "description": "A Secure password manager",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "vite.svg"
+    }
+}
